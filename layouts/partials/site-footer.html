@@ -1,8 +1,12 @@
 <footer class="{{ .Site.Params.background_color_class | compare.Default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="{{ .Site.Home.Permalink }}" >
+  <a class="f4 fw4 hover-white white-80 dn dib-ns pv2 ph3 no-underline" href="https://agro-flor.com" >
     &copy; {{ with .Site.Copyright | compare.Default .Site.Title }} {{ . | safe.HTML }} {{ now.Format "2006"}} {{ end }}
   </a>
-    <div>{{ partials.IncludeCached "social/follow.html" . }}</div>
+	<div class="white-80 ">
+    
+	<a class="hover-white white-80 dn dib-ns pv2 ph3 no-underline" href="callto:+43557625313">Tel.: +43 5576 25313</a><br>
+	<a class="hover-white white-80 dn dib-ns pv2 ph3 no-underline" href="mailto:office@agroflor.at" target="_blank">E-Mail: office@agroflor.at</a><br>
+	{{ partials.IncludeCached "social/follow.html" . }}</div>
   </div>
 </footer>
